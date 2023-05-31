@@ -7,6 +7,37 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  background: #f9f9f9;
+}
+
+.form-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 400px;
+  background-color: #23242a;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+}
+
+.form-box h2 {
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.input-box {
+  position: relative;
+  margin: 2rem 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
