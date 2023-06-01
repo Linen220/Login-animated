@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #fff;
-    background: #f9f9f9;
+    background: #afc3fa;
 }
 
 // Fondo con forma de luna curveada
@@ -24,8 +24,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00ccff;
-    z-index: -1;
+    background: #3F0071;
+    z-index: -2;
 
     // La propiedad clip-path permite realizar un recorte 
     // con una forma concreta, ocultando toda la región 
@@ -33,16 +33,20 @@ body {
     clip-path: circle(98% at 0 0);
     // Recorta en forma circular con un tamaño size con 
     // centro en x,y.
+
+    transition-delay: 1.2s;
 }
 
 // La sobrescripción de código no es un problema :)
 .bg-color {
     @extend .curved;
-    background-color: red;
+    // background-color: transparent;
     clip-path: circle(0% at 0 0);
 }
 .active {
     clip-path: circle(98% at 0 0);
+    // ease-out la animación inicia rapido y termina lento
+    // ease-in la animación inicia lento y termina rapido
     transition: 1.2s ease-out;
 }
 
