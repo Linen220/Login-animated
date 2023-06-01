@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Linen - Login animated</title>
 </head>
 <body>
@@ -12,11 +14,13 @@
         <form action="#">
             <h2>Login</h2>
             <div class="input-box">
-                <input type="email" name="email" id="email">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" id="email" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-box">
-                <input type="password" name="password" id="password">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="password" id="password" required>
                 <label for="password">Password</label>
             </div>
             <div class="forget-password">

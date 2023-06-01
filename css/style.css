@@ -26,7 +26,6 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 1.25rem;
 }
-
 .form-box h2 {
   text-align: center;
   font-size: 2rem;
@@ -39,7 +38,6 @@ body {
   margin: 30px 0;
   border-bottom: 2px solid #fff;
 }
-
 .input-box input {
   width: 100%;
   height: 50px;
@@ -50,12 +48,23 @@ body {
   border: none;
   outline: none;
 }
+.input-box input:focus ~ label, .input-box input:valid ~ label {
+  top: -5px;
+}
 .input-box label {
   position: absolute;
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
   font-style: 1rem;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.input-box ion-icon {
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
