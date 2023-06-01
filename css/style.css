@@ -49,6 +49,11 @@ body {
   overflow: hidden;
   z-index: 0;
 }
+@media screen and (max-width: 768px) {
+  .form-box {
+    width: 90%;
+  }
+}
 .form-box h2 {
   text-align: center;
   font-size: 2rem;
@@ -58,8 +63,13 @@ body {
 .input-box {
   position: relative;
   width: 310px;
-  margin: 30px 0;
+  margin: 30px auto;
   border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 768px) {
+  .input-box {
+    width: 90%;
+  }
 }
 .input-box input {
   width: 100%;
@@ -79,9 +89,14 @@ body {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
-  font-style: 1rem;
+  font-size: 1rem;
   pointer-events: none;
   transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .input-box label {
+    font-size: 0.9rem;
+  }
 }
 .input-box ion-icon {
   position: absolute;
@@ -96,8 +111,26 @@ body {
   justify-content: space-between;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  .forget-password {
+    text-align: center;
+    flex-direction: column;
+    gap: 12px;
+    margin: 30px 0;
+  }
+}
 .forget-password label input {
   margin-left: 3px;
+}
+@media screen and (max-width: 768px) {
+  .forget-password label input {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .forget-password {
+    font-size: 0.8rem;
+  }
 }
 .forget-password a {
   color: #fff;
@@ -132,6 +165,11 @@ body {
 }
 .register-section p a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .register-section {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

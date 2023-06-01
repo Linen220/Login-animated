@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import './responsive';
 
 // STYLE GENERAL
 * {
@@ -62,6 +63,9 @@ body {
     border-radius: 1.25rem;
     overflow: hidden;
     z-index: 0;
+    @include mobile {
+        width: 90%;
+    }
     h2 {
         text-align: center;
         font-size: 2rem;
@@ -72,8 +76,11 @@ body {
 .input-box {
     position: relative;
     width: 310px;
-    margin: 30px 0;
+    margin: 30px auto;
     border-bottom: 2px solid #fff;
+    @include mobile {
+        width: 90%;
+    }
     input {
         width: 100%;
         height: 50px;
@@ -104,12 +111,15 @@ body {
         top: 50%; 
         // Permitio centrar el label despues de usar top:50%
         transform: translateY(-50%); //Translada -50% del "label" haca arriba debido a que el valor es negativo
-        font-style: 1rem;
+        font-size: 1rem;
         // Deshabilita los eventos del elemento
         // como el click, pasar el mouse, sombrear, etc
         pointer-events: none;
 
         transition: .4s;
+        @include mobile {
+            font-size: .9rem;
+        }
     }
     
     ion-icon {
@@ -125,9 +135,22 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: .9rem;
+    @include mobile {
+        text-align: center;
+        flex-direction: column;
+        gap: 12px;
+        margin: 30px 0;
+    }
     label input {
         margin-left: 3px;
+        @include mobile {
+            margin-left: 0;
+        }
     }
+    @include mobile {
+        font-size: .8rem;
+    }
+
     a {
         color: #fff;
         text-decoration: none;
@@ -161,5 +184,8 @@ body {
         &:hover {
             text-decoration: underline;
         }
+    }
+    @include mobile {
+        font-size: .8rem;
     }
 }
